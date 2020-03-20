@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Img Compression</string>
+    <string name="load_from_gallery">Open Gallery</string>
+    <string name="load_from_camera">Open Camera</string>
+    <string name="compress">Compress</string>
+    <string name="normal_image">Normal Image</string>
+    <string name="compress_image">Compressed Image</string>
+
+
+</resources>

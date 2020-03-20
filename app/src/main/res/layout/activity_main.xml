@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.aliaboubakr.imgcompression.MainActivity">
+
+
+    <TextView
+        android:id="@+id/norm"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/normal_image"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+     android:layout_marginTop="5dp"
+      android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:layout_below="@+id/norm"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/activity_main_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+android:outlineAmbientShadowColor="@android:color/black"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="@string/compress_image" />
+
+        <ImageView
+            android:id="@+id/activity_main_img_compress"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+           />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_main_btn_load_from_camera"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/activity_main_ll_image"
+android:layout_marginLeft="240dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/back_corners"
+        android:textColor="@android:color/white"
+        android:text="@string/load_from_camera"/>
+
+    <Button
+        android:id="@+id/activity_main_btn_load_from_gallery"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/activity_main_ll_image"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/back_corners"
+        android:textColor="@android:color/white"
+        android:text="@string/load_from_gallery"/>
+
+    <Button
+        android:id="@+id/activity_main_btn_compress"
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/activity_main_ll_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="186dp"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/compres_draw" />
+
+</RelativeLayout>
